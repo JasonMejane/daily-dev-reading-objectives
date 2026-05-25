@@ -13,6 +13,7 @@ const nextConfig = {
   async headers() {
     return [{ source: '/(.*)', headers: securityHeaders }];
   },
+  serverExternalPackages: ['jsdom', 'html-encoding-sniffer', 'whatwg-encoding'],
 };
 
 module.exports = nextConfig;
