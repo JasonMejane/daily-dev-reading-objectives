@@ -114,7 +114,16 @@ export default function Home() {
 
           {/* Footer */}
           <div className="footer">
-            <span>Reading Objectives v1</span>
+            <span>
+              Reading Objectives v1 -{' '}
+              <a
+                href="https://github.com/JasonMejane/daily-dev-reading-objectives"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                See on GitHub
+              </a>
+            </span>
             <span>Jason Mejane</span>
           </div>
         </div>
