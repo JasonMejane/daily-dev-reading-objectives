@@ -1,7 +1,7 @@
-import DOMPurify from 'isomorphic-dompurify';
+import sanitizeHtml from 'sanitize-html';
 
 export function sanitizeString(value: string): string {
-  return DOMPurify.sanitize(value.trim());
+  return sanitizeHtml(value.trim());
 }
 
 export function checkUserId(userId: string): string {
